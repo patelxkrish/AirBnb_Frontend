@@ -4,7 +4,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import WakingUpBanner from "./components/WakingUpBanner";
 import Home from "./pages/Home";
 import List from "./pages/List";
 import NewList from "./pages/NewList";
@@ -23,6 +23,7 @@ function RequireAuth({ children }) {
 function AppRoutes() {
   return (
     <div className="d-flex flex-column min-vh-100">
+      <WakingUpBanner />
       <Navbar />
 
       <main className="flex-grow-1">
